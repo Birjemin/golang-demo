@@ -1,4 +1,8 @@
-FROM busybox
-MAINTAINER birjemin@gmail.com
+FROM alpine
 
-ENTRYPOINT ["date"]
+ENV TZ Asia/Shanghai
+
+WORKDIR /app
+COPY --from=builder /workspace/main /app/main
+
+CMD ["./main"]
