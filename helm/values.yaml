@@ -4,10 +4,10 @@
 
 replicaCount: 1
 image:
-  repository: demo.goharbor.io/op/golang_demo
+  repository: demo.goharbor.io/op/golang-demo
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: v1.1.0
+  tag: v1.1.1
 
 imagePullSecrets: []
 nameOverride: ""
