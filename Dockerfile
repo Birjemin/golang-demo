@@ -3,6 +3,6 @@ FROM alpine
 ENV TZ Asia/Shanghai
 
 WORKDIR /app
-COPY /main /app/main
+COPY /golang_demo /app/golang_demo
 
-CMD ["./main"]
+CMD ["./golang_demo"]
